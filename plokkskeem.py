@@ -8,29 +8,37 @@ try:
         print("viga")
     else:
         podhod= (K + M - 1 )// M
+        jaak=K%M
         print("podhodov", podhod)
 except:
     print("viga ")
 
-#2 variant ul 1
 
-sum = 0 
-N=int(input("sisesta number: "))
-for i in range (N):
-    num = int(input(f"sisesta arv {i+1}: "))
+
+#2 variant ul 1
+try:
+    sum = 0 
+    N=int(input("sisesta number: "))
+    for i in range (N):
+        num = int(input(f"sisesta arv {i+1}: "))
     if num>0:
         sum += num
         print("summa on", sum)
+except:
+    print("VIGA")
 
 #4 variant ul 2
-vastus=0
-p=int(input("mitu korda kordame?"))
-while True:
-    arv=float(input("Sisesta arv: "))
-    if arv<0: vastus+=arv
-    p-=1
-    if p==0:break
-print("Vastus on", vastus)
+try:
+    vastus=0
+    p=int(input("mitu korda kordame?"))
+    while True:
+        arv=float(input("Sisesta arv: "))
+        if arv<0: vastus+=arv
+        p-=1
+        if p==0:break
+        print("Vastus on", vastus)
+except:
+    print("Viga")
 
 
 
